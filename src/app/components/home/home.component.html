@@ -1,0 +1,34 @@
+<div class="filters">
+    <mat-form-field>
+        <mat-label>Sort</mat-label>
+        <mat-select
+            panelClass="sort-select"
+            [(ngModel)]="sort"
+        >
+        <mat-option value="name">Name</mat-option>
+        <mat-option value="-released">Released</mat-option>
+        <mat-option value="-director">Director</mat-option>
+        <mat-option value="-added">Added</mat-option>
+        <mat-option value="-created">Created</mat-option>
+        <mat-option value="-updated">Updated</mat-option>
+        <mat-option value="-rating">Rating</mat-option>    
+        </mat-select>
+    </mat-form-field>
+</div>
+
+<div class="movies">
+    <div class="movie">
+        <div class="movie-thumb-container">
+            <img
+             src="https://cdn.shopify.com/s/files/1/1416/8662/products/alien_1979_original_film_art_1200x.jpg?v=1607111293"
+             alt="thumbnail"
+             class="movie-thumbnail"
+            />
+        </div>
+        <div class="movie-description">
+            <p class="movie-name">Name</p>
+            <p class="movie-director">Director</p>
+            <p class="movie-release">Release Date</p>
+        </div>
+    </div>
+</div>
